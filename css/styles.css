@@ -1,0 +1,228 @@
+
+/* Tags */
+
+body {
+	margin: 0; 
+	padding: 0; 
+	background-color: red;
+	 
+}
+
+p {
+	font-family: Arial; 
+	margin: 20px;
+}
+
+a {
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+h1 {
+	margin: auto;
+	color: white;
+	padding: 20px;
+	width: 50%;
+	text-align: center;
+}
+
+/* Body classes */
+
+.margin {
+	margin-top: 130px;
+}
+
+.logo {
+	width:40%;
+	border:0;
+
+}
+
+.index {
+
+	color: white;
+	background-image: url("../images/index.jpg");
+	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+}
+
+.contact {
+
+  color: white;
+  /* The image used */
+  background-image: url("../images/contact.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product {
+  /* The image used */
+  background-image: url("../images/product.jpg");
+
+  color: white;
+
+	font-family: Arial;
+	font-size: 25px;
+	text-decoration: none;
+	line-height: 40px;
+	background-attachment: fixed;
+}
+
+.textbg {
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  min-width: 475px;
+  padding: 20px;
+  text-align: center;
+	
+}
+
+.textbgbold {
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  min-width: 475px;
+  padding: 20px;
+  text-align: center;
+	
+}
+
+.textbgbody {
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  min-width: 475px;
+  padding: 20px;
+  text-align: center;
+	
+}
+
+.copyright {
+
+	text-align: center;
+	color: white;
+
+}
+
+.footer {
+
+	text-align: center;
+
+}
+
+* {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+
+
+img {
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column {
+	flex: 25%;
+	max-width: 25%
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+}
+
+/* Nav classes */
+
+.mainNav {
+      background-color: red;
+      width: 100%;
+      position: fixed;
+      top:0;
+      z-index: 1000;
+      margin: 0 auto;
+     text-align: center;
+
+ }
+
+.mainNav a {
+	font-size: 30px;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.mainNav a:hover {
+	background-color: pink;
+	color: black;
+}
+
+.mainNav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.mainNav a {display: none;}
+	.mainNav a.icon{display: block; float: right;}
+
+}
+
+@media screen and (max-width: 600px){
+	.mainNav.responsive {position: relative;}
+	.mainNav.responsive .icon {position: absolute;
+		top: 0;
+		right: 0;}
+
+	.mainNav.responsive a {
+		display: block;
+		text-align: center;
+	}
+
+}
+
+/* Responsive layout - change 4 column stracture to 2 or 1 column stracture */
+
+@media (max-width: 850px) {
+	.column {
+		flex: 50%
+		max max-width: 50%;
+	}
+}
+
+/* Resposive layout - change 2 column stracture to 1 column stracture */
+
+@media (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
